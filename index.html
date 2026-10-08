@@ -47,12 +47,16 @@
             border-bottom: 1px solid rgba(91, 66, 42, 0.15);
         }
 
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            color: #4d3825;
-        }
+       .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
 
         .logo span {
             color: #687c50;
@@ -271,10 +275,9 @@
 <body>
 
     <nav>
-        <div class="logo">
-            Summer <span>Leaf</span> Tobacco
-        </div>
-
+       <div class="logo">
+    <img src="images/images/logo.jpg" alt="Summer Leaf Tobacco">
+</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
