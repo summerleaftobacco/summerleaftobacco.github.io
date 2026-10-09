@@ -315,6 +315,163 @@ section {
     transition-duration: 0.01ms !important;
   }
 } 
+   
+/* SUMMER LEAF TOBACCO — REFINED DESIGN */
+
+:root {
+  --sl-green: #2d4333;
+  --sl-green-deep: #202f25;
+  --sl-cream: #f7f3e9;
+  --sl-brown: #785638;
+  --sl-gold: #b68a52;
+  --sl-text: #494a41;
+  --sl-line: rgba(45, 67, 51, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--sl-cream);
+  color: var(--sl-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  padding: 22px 7%;
+  background: rgba(247, 243, 233, 0.96);
+  border-bottom: 1px solid var(--sl-line);
+  box-shadow: 0 5px 25px rgba(32, 47, 37, 0.035);
+  transition: background 0.3s ease;
+}
+
+.nav-links {
+  gap: clamp(12px, 2.1vw, 30px);
+}
+
+.nav-links a {
+  position: relative;
+  padding-bottom: 6px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--sl-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  background:
+    radial-gradient(
+      ellipse at 88% 45%,
+      rgba(182, 138, 82, 0.15),
+      transparent 34%
+    ),
+    linear-gradient(125deg, #f7f3e9, #eee5d4);
+}
+
+.hero h1 {
+  letter-spacing: -1.8px;
+  line-height: 1.02;
+}
+
+.hero p {
+  max-width: 560px;
+  line-height: 1.95;
+  color: #625d51;
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+}
+
+.button {
+  border: 1px solid var(--sl-green);
+  background: var(--sl-green);
+  padding: 15px 30px;
+  letter-spacing: 0.7px;
+  box-shadow: none;
+}
+
+.button:hover {
+  background: var(--sl-brown);
+  border-color: var(--sl-brown);
+  box-shadow: 0 8px 22px rgba(32, 47, 37, 0.12);
+  transform: translateY(-2px);
+}
+
+.intro {
+  background: var(--sl-green);
+  padding: 100px 10%;
+}
+
+.intro h2 {
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.intro p {
+  line-height: 2;
+  max-width: 720px;
+}
+
+footer {
+  background: var(--sl-green-deep);
+  padding: 32px 8%;
+  line-height: 1.8;
+}
+
+footer a {
+  transition: color 0.25s ease;
+}
+
+footer a:hover {
+  color: #d6b27c;
+}
+
+::selection {
+  background: var(--sl-green);
+  color: var(--sl-cream);
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 16px 5%;
+  }
+
+  .nav-links {
+    row-gap: 10px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
     </style>
 </head>
 
