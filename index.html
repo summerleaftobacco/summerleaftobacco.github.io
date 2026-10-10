@@ -589,12 +589,17 @@ nav {
     }
 }
     
-/* Elegant product card interactions */
+
+
+
+/* Elegant green product cards */
 
 #products > div > div {
-    border: 1px solid rgba(182, 138, 82, 0.25);
+    background: #354f3b;
+    color: #f8f3e8;
+    border: 1px solid rgba(182, 138, 82, 0.4);
     border-radius: 10px;
-    box-shadow: 0 5px 18px rgba(32, 47, 37, 0.06);
+    box-shadow: 0 5px 18px rgba(32, 47, 37, 0.08);
     transition:
         transform 0.35s ease,
         box-shadow 0.35s ease,
@@ -603,8 +608,13 @@ nav {
 
 #products > div > div:hover {
     transform: translateY(-6px);
-    border-color: #b68a52;
-    box-shadow: 0 14px 30px rgba(32, 47, 37, 0.12);
+    border-color: #d2a45f;
+    box-shadow: 0 14px 30px rgba(32, 47, 37, 0.18);
+}
+
+#products > div > div h3,
+#products > div > div h4 {
+    color: #e4bd7a;
 }
 
 @media (prefers-reduced-motion: reduce) {
