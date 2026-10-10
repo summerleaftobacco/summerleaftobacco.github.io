@@ -473,6 +473,66 @@ footer a:hover {
   }
 }
     </style>
+
+<style>
+/* Premium Summer Leaf Tobacco styling */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth transitions for links and buttons */
+a, button {
+    transition:
+        color 0.35s ease,
+        background-color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* Elegant image presentation */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img, .hero, section {
+    scroll-margin-top: 90px;
+}
+
+/* Refined text selection */
+::selection {
+    background: #b88746;
+    color: #fffdf6;
+}
+
+/* Accessible, subtle keyboard focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #b88746;
+    outline-offset: 4px;
+}
+
+/* Respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
 </head>
 
 <body>
