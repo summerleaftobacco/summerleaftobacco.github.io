@@ -760,6 +760,39 @@ nav .menu-toggle span {
         display: flex !important;
     }
 }
+    
+/* Slimmer navigation bar */
+nav {
+    min-height: 0 !important;
+    height: 76px !important;
+    padding: 6px 5% !important;
+    box-sizing: border-box !important;
+}
+
+/* Keep the logo balanced inside the thinner bar */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 100px !important;
+    max-height: 62px !important;
+    object-fit: contain;
+}
+
+/* Make sure the mobile menu stays aligned */
+@media (max-width: 800px) {
+    nav {
+        height: 68px !important;
+        padding: 4px 5% !important;
+    }
+
+    nav .logo img {
+        width: 88px !important;
+        max-height: 56px !important;
+    }
+}
 </style>
 </head>
 
