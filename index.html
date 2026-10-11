@@ -793,6 +793,30 @@ nav .logo img {
         max-height: 56px !important;
     }
 }
+    
+/* FINAL LOGO SIZE OVERRIDE */
+nav .logo,
+nav .logo a {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+nav .logo img {
+    width: 145px !important;
+    height: 65px !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+@media (max-width: 800px) {
+    nav .logo img {
+        width: 115px !important;
+        height: 56px !important;
+    }
+}
 </style>
 </head>
 
