@@ -703,11 +703,23 @@ button:focus-visible {
 
 <body>
 
-    <nav>
-       <div class="logo">
-    <img src="file_000000009374821080fd189fee13f952.png" alt="Summer Leaf Tobacco">
-</div>
-        <ul class="nav-links">
+   
+<nav>
+    <div class="logo">
+        <img src="file_000000009374821080fd189fee13f952.png" alt="Summer Leaf Tobacco">
+    </div>
+
+    <button class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#our-legacy">About Us</a></li>
             <li><a href="#vision">Vision</a></li>
