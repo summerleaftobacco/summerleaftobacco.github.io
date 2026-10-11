@@ -698,6 +698,68 @@ button:focus-visible {
         transform: none;
     }
 }
+    
+/* FINAL LOGO SIZE FIX */
+nav .logo {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+nav .logo img {
+    display: block !important;
+    width: 125px !important;
+    max-width: none !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+/* FORCE THE MOBILE MENU BUTTON TO SHOW */
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+    background: #f7f3e9 !important;
+    border: 1px solid #b68a52 !important;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1002;
+}
+
+nav .menu-toggle span {
+    display: block !important;
+    width: 22px !important;
+    height: 2px !important;
+    min-height: 2px;
+    background-color: #304735 !important;
+    opacity: 1 !important;
+    border-radius: 2px;
+}
+
+@media (max-width: 800px) {
+    nav .logo img {
+        width: 100px !important;
+    }
+
+    nav .menu-toggle {
+        display: flex !important;
+    }
+
+    nav .nav-links {
+        display: none !important;
+    }
+
+    nav .nav-links.open {
+        display: flex !important;
+    }
+}
 </style>
 </head>
 
