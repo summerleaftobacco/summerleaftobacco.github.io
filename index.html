@@ -900,6 +900,147 @@ nav .logo img {
         max-height: 66px !important;
     }
 }
+    ```css
+/* SUMMER LEAF TOBACCO — GALLERY */
+
+.gallery-section {
+    padding: 90px 8%;
+    background: #f7f3e9;
+}
+
+.gallery-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.gallery-eyebrow {
+    display: block;
+    color: #a47b48;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.gallery-heading h2 {
+    color: #2d4333;
+    font-family: "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: normal;
+    margin: 0 0 16px;
+}
+
+.gallery-heading p {
+    color: #6c665b;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0 auto;
+}
+
+.gallery-divider {
+    width: 58px;
+    height: 2px;
+    background: #b68a52;
+    margin: 24px auto 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 18px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #e8e0d0;
+    isolation: isolate;
+}
+
+.gallery-featured {
+    grid-row: span 2;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(25, 38, 28, 0.78)
+    );
+    pointer-events: none;
+}
+
+.gallery-caption {
+    position: absolute;
+    z-index: 1;
+    left: 22px;
+    right: 18px;
+    bottom: 20px;
+    color: #fffaf0;
+}
+
+.gallery-caption span {
+    display: block;
+    color: #dfbd8a;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.gallery-caption h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.045);
+}
+
+@media (max-width: 760px) {
+    .gallery-section {
+        padding: 65px 6%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 260px 190px 190px;
+        gap: 12px;
+    }
+
+    .gallery-featured {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .gallery-caption {
+        left: 14px;
+        bottom: 14px;
+    }
+
+    .gallery-caption h3 {
+        font-size: 19px;
+    }
+}
+
+
 </style>
 </head>
 
@@ -1163,6 +1304,62 @@ url('6e42d280-0ac1-4972-9d97-3b6f54556bef.png') center center / cover no-repeat;
 
             </div>
         </section>
+```html
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery-section">
+    <div class="gallery-heading">
+        <span class="gallery-eyebrow">A Closer Look</span>
+        <h2>Our Gallery</h2>
+        <p>
+            A glimpse into our fields, our leaves, and the
+            traditions behind Summer Leaf Tobacco.
+        </p>
+        <div class="gallery-divider"></div>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item gallery-featured">
+            <img src="images/tobacco1.JPG"
+                 alt="Tobacco cultivation and natural surroundings"
+                 loading="lazy">
+            <div class="gallery-caption">
+                <span>01</span>
+                <h3>Our Fields</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/tobacco2.JPG"
+                 alt="A closer view of tobacco leaves"
+                 loading="lazy">
+            <div class="gallery-caption">
+                <span>02</span>
+                <h3>The Leaf</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/tobacco3.JPG"
+                 alt="Tobacco cultivation and leaf selection"
+                 loading="lazy">
+            <div class="gallery-caption">
+                <span>03</span>
+                <h3>Our Craft</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/tobacco4.JPG"
+                 alt="Tobacco leaves and their natural character"
+                 loading="lazy">
+            <div class="gallery-caption">
+                <span>04</span>
+                <h3>Our Heritage</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
